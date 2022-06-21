@@ -1,0 +1,247 @@
+/* --去除原先設定 重新設定-- */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* --灰色的底-- */
+
+body {
+    background: rgb(233, 233, 233);
+}
+
+
+/* --白色的框架-- */
+
+.wrap {
+    background: #fff;
+    width: 900px;
+    height: auto;
+    margin: 40px auto;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+}
+
+.wrap h2 {
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+/* --基本資料-- */
+
+.wrap .profile {
+    padding: 1.6%;
+    margin-bottom: 40px;
+    background: linear-gradient(to left, #f5f7f7, #fff);
+}
+
+.wrap .profile .left {
+    width: 56%;
+    float: left;
+    margin-right: 4%;
+}
+
+.wrap .profile .left img {
+    width: 100%;
+}
+
+.wrap .profile .right {}
+
+.wrap .profile .right h1.name {
+    font-size: 20px;
+    margin-bottom: 100px;
+    padding-top: 32px;
+}
+
+.wrap .profile .right .info {
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: .6px;
+}
+
+.wrap .profile .right .link {}
+
+.wrap .profile .right .link a {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    display: inline-block;
+    margin-right: 5px;
+    width: 21px;
+    height: 21px;
+}
+
+.wrap .profile .right .link a img {
+    width: 21px;
+    height: 21px;
+    opacity: 0.8;
+}
+
+.wrap .profile .right .link a:hover {
+    transition: .4s;
+    opacity: 0.4;
+}
+
+.wrap .profile .right .mail::before {
+    content: "/E";
+    font-weight: bold;
+}
+
+.wrap .profile .right .mail a {
+    color: black;
+}
+
+
+/* --滑鼠滑過動畫-- */
+
+.wrap .profile .right .mail a:hover {
+    transition: .4s;
+    text-decoration: none;
+    color: #ccc;
+}
+
+.wrap .profile .right .phone::before {
+    content: "/P";
+    font-weight: bold;
+}
+
+
+/* --技能-- */
+
+.wrap .skill {
+    margin-left: 2%;
+}
+
+.wrap .skill ul {
+    padding-bottom: 30px;
+}
+
+.wrap .skill ul li {
+    list-style-type: none;
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+}
+
+.wrap .skill ul li:nth-child(3n) {
+    margin-right: 0%
+}
+
+.wrap .skill ul li span::before {
+    content: " / ";
+}
+
+.wrap .skill ul li span {
+    margin-left: 8px;
+    font-weight: lighter;
+    color: rgb(111, 111, 111);
+}
+
+
+/* --經歷--*/
+
+.wrap .experience {
+    margin-left: 2%;
+}
+
+.wrap .experience h2 {}
+
+.wrap .experience .leftbox {
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+    border-left: 1px solid rgb(230, 235, 235);
+}
+
+.wrap .experience .rightbox {
+    width: 47%;
+    float: left;
+    border-left: 1px solid rgb(230, 235, 235);
+}
+
+.wrap .experience ul {
+    margin-left: 12px;
+}
+
+.wrap .experience ul li {
+    list-style-type: none;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.wrap .experience ul li::before {
+    content: "●";
+    width: 8px;
+    height: 8px;
+    display: block;
+    border-radius: 50%;
+    color: rgb(240, 246, 246);
+    position: absolute;
+    left: -19px;
+}
+
+.wrap .experience ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.wrap .experience ul li a:hover {
+    transition: .4s;
+    color: #ccc;
+}
+
+.wrap .experience ul li span::before {
+    content: " / ";
+    margin-left: 12px;
+}
+
+.wrap .experience ul li span {
+    display: block;
+    font-size: 9px;
+    font-weight: lighter;
+    color: rgb(111, 111, 111);
+}
+
+
+/* --作品-- */
+
+.wrap .work {}
+
+.wrap .work h2 {
+    margin-left: 2%;
+    margin-top: 40px;
+}
+
+.wrap .work ul {
+    padding-top: 240px;
+    margin: 1%;
+    margin-bottom: 600px;
+    list-style-type: none;
+}
+
+.wrap .work ul li {
+    width: 32%;
+    height: 190px;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.wrap .work ul li:nth-child(3n) {
+    margin-right: 0%
+}
+
+.wrap .work ul li img {
+    object-position: 0px;
+    width: 100%;
+}
+
+.wrap .work ul li:hover img {
+    transform: scale(1.1);
+    transition: all 1s;
+}
