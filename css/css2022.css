@@ -29,6 +29,8 @@ body {
     font-size: 18px;
     margin-top: 40px;
     margin-bottom: 20px;
+    width: fit-content;
+    background-color: rgb(240, 246, 246);
 }
 
 
@@ -146,25 +148,29 @@ body {
 
 .wrap .experience {
     margin-left: 2%;
+    height: auto;
 }
 
 .wrap .experience h2 {}
 
 .wrap .experience .leftbox {
     width: 48%;
+    height: 170px;
     float: left;
     margin-right: 4%;
-    border-left: 1px solid rgb(230, 235, 235);
+    border-left: 1px solid rgb(240, 246, 246);
+    overflow: inherit;
 }
 
 .wrap .experience .rightbox {
     width: 47%;
     float: left;
-    border-left: 1px solid rgb(230, 235, 235);
+    border-left: 1px solid rgb(240, 246, 246);
+    overflow: inherit;
 }
 
 .wrap .experience ul {
-    margin-left: 12px;
+    margin-left: 36px;
 }
 
 .wrap .experience ul li {
@@ -175,13 +181,13 @@ body {
 
 .wrap .experience ul li::before {
     content: "●";
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
     display: block;
     border-radius: 50%;
     color: rgb(240, 246, 246);
     position: absolute;
-    left: -19px;
+    left: -43px;
 }
 
 .wrap .experience ul li a {
@@ -242,6 +248,13 @@ body {
 }
 
 .wrap .work ul li:hover img {
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition: all 1s;
+}
+
+.bottom {
+    padding-top: 40px;
+    text-align: center;
+    font-weight: lighter;
+    color: #ccc;
 }
